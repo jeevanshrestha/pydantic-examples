@@ -4,7 +4,7 @@ from datetime import timedelta, datetime
 from pathlib import Path
 from typing import Optional
 from enum import Enum
-from typedefs.user import UserRole, User
+from typedefs.user import  User
 class Auth():
     def __init__(self):
         self.private_key = Path(".ssh/private.key").read_text()
