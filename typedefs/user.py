@@ -4,7 +4,7 @@ from enum import Enum
 from datetime import datetime
 from pydantic import field_validator, model_validator, computed_field #type:ignore
 import bcrypt
-from course import Course, CourseCategory
+from typedefs.course import Course, CourseCategory
 
 
 class User(BaseModel):

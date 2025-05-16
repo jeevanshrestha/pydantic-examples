@@ -4,11 +4,11 @@ from datetime import timedelta, datetime
 from pathlib import Path
 from typing import Optional
 from enum import Enum
-from user import UserRole, User
+from typedefs.user import UserRole, User
 class Auth():
     def __init__(self):
-        self.private_key = Path("private.key").read_text()
-        self.public_key = Path("public.key").read_text()
+        self.private_key = Path(".ssh/private.key").read_text()
+        self.public_key = Path(".ssh/public.key").read_text()
         self.algorithm = "RS256"
         self.access_token_expire_minutes = 30
 
